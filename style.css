@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --font-texto: 'Arial', sans-serif;
+    --font-destaque: 'Quicksand', sans-serif;
+    --bege: #F8EFE8;
+    --bordo: #6A1718;
+    --rose: #9b8585;
+    --preto: #3b3b3b8c; 
+    --back-rosa: #f7ddddd8;
+    --back-branco: #ffffffd8;
+}
+
+body {
+    font-family: var(--font-texto);
+    background-color: var(--bege);
+}
+
+header {
+    padding: 2em;
+}
+
+h2 {
+    font-family: var(--font-destaque);
+    text-align: center;
+    letter-spacing: 4px;
+    color: var(--bordo);
+    font-size: 2em;
+    padding-bottom: 0.5em;
+}
+
+header > p {
+    text-align: center;
+    color: var(--rose);
+}
+
+h3 {
+    color: var(--bordo);
+    letter-spacing: 2px;
+}
+
+.navs {
+    background-color: var(--back-rosa);
+}
+
+.paragrafos {
+    background-color: var(--back-branco);
+}
+
+.paragrafo_historia,
+.paragrafo_ingred,
+.paragrafo_preco {
+    color: var(--rose);
+    text-indent: 12px;
+    padding: 25px;
+}
+
+.paragrafo_ingred,
+.paragrafo_preco {
+    display: none;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn_navs {
+    border: none;
+    cursor: pointer;
+    background-color: var(--back-rosa);
+}
+
+.aba_clicada {
+    background-color: var(--back-branco);
+    padding: 10px;
+}
+
+.nav_e_paragrafos {
+    width: 500px;
+    margin-left: 200px;
+}
+
+.navs {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+img {
+    width: 200px;
+    height: 250px;
+    border-radius: 2px;
+    margin-left: 2em;
+}
