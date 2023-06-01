@@ -35,31 +35,24 @@ h2 {
 header > p {
     text-align: center;
     color: var(--rose);
-}
-
-h3 {
-    color: var(--bordo);
     letter-spacing: 2px;
+    font-size: 1.2em;
 }
 
 .navs {
     background-color: var(--back-rosa);
 }
 
-.paragrafos {
-    background-color: var(--back-branco);
-}
-
-.paragrafo_historia,
-.paragrafo_ingred,
-.paragrafo_preco {
+.artigos {
     color: var(--rose);
     text-indent: 12px;
     padding: 25px;
+    background-color: var(--back-branco);
+    line-height: 1.5em;
 }
 
-.paragrafo_ingred,
-.paragrafo_preco {
+.art_ingred,
+.art_preco {
     display: none;
 }
 
@@ -72,16 +65,20 @@ main {
     border: none;
     cursor: pointer;
     background-color: var(--back-rosa);
+    color: var(--bordo);
+    font-size: 1.2em;
+    padding: 1em;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: var(--font-destaque);
 }
 
-.aba_clicada {
-    background-color: var(--back-branco);
-    padding: 10px;
+.btn_navs:hover {
+    color: #75191bb1;
 }
 
 .nav_e_paragrafos {
-    width: 500px;
-    margin-left: 200px;
+    width: 750px;
 }
 
 .navs {

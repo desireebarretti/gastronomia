@@ -1,25 +1,30 @@
-let tituloHist = document.querySelector('.titulo_hist')
-let tituloIngred = document.querySelector('.titulo_ingr')
-let tituloPreco = document.querySelector('.titulo_preco')
+const navs = document.querySelector('.navs')
 
-let paragrafoHist = document.querySelector('.paragrafo_historia')
-let paragrafoIngred = document.querySelector('.paragrafo_ingred')
-let paragrafoPreco = document.querySelector('.paragrafo_preco')
+navs.addEventListener('click', function(e){
+    let artHist = document.querySelector('.art_hist')
+    let artIngr = document.querySelector('.art_ingred')
+    let artPreco = document.querySelector('.art_preco')
 
+    let btnHist = document.querySelector('#historia')
+    let btnIngred = document.querySelector('#ingredientes')
+    let btnPreco = document.querySelector('#preco')
 
-function abaClicadaHistoria() {
-    tituloHist.style.background = '#ffffffd8'
-}
+    if(e.target.dataset.id === 'historia'){
+        artHist.style.display = 'block'
+        artIngr.style.display = 'none'
+        artPreco.style.display = 'none'
+        btnHist.style.color = '#75191bb1'
 
-function abaClicadaIngred() {
-    tituloHist.style.background = '#f7ddddd8'
-    tituloIngred.style.background = '#ffffffd8'
-    paragrafoIngred.style.display = 'block'
-    paragrafoHist.style.display = 'none'
-}
+    } else if(e.target.dataset.id === 'ingredientes'){
+        artIngr.style.display = 'block'
+        artHist.style.display = 'none'
+        artPreco.style.display = 'none'
+        btnIngred.style.color = '#75191bb1'
 
-function abaClicadaPreco() {
-    tituloPreco.style.background = '#ffffffd8'
-    paragrafoPreco.style.display = 'block'
-    paragrafoHist.style.display = 'none'
-}
+    } else {
+        artPreco.style.display = 'block'
+        artIngr.style.display = 'none'
+        artHist.style.display = 'none'
+        btnPreco.style.color = '#75191bb1'
+    }
+})

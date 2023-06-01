@@ -17,24 +17,24 @@
 <body>
     <header>
         <h2>Panquecas Americanas</h2>
-        <p>Ideal para café da manhã!</p>
+        <p>Ideal para o seu café da manhã!</p>
     </header>
     <main>
         <img src="./img/pancakes.jpg" alt="Imagem de panquecas americanas">
         <div class="nav_e_paragrafos">
             <nav class="navs">
-                <button class="btn_navs historia" onclick="abaClicadaHistoria()">
-                    <h3 class="titulo_hist">História</h3>
+                <button class="btn_navs active" data-id="historia">
+                    História
                 </button>
-                <button class="btn_navs" onclick="abaClicadaIngred()">
-                    <h3 class="titulo_ingr">Ingredientes</h3>
+                <button class="btn_navs" data-id="ingredientes">
+                   Ingredientes
                 </button>
-                <button class="btn_navs" onclick="abaClicadaPreco()">
-                    <h3 class="titulo_preco">Preço</h3>
+                <button class="btn_navs" data-id="preco">
+                    Preço
                 </button>
             </nav>
-            <section class="paragrafos">
-                <p class="paragrafo_historia">
+            <section class="artigos">
+                <articule class="art_hist">
                     A panqueca já está tão enraizada no cotidiano dos norte-americanos que parece ser uma invenção
                     deles.
                     Mas não é! Há relatos que datam de milhares de anos com receitas feitas à base de farinha,
@@ -42,13 +42,16 @@
                     versão famosa?
                     Os antigos gregos e romanos comiam panquecas adoçadas com mel; enquanto os ingleses, desde a época
                     da Renascença, tinham o hábito de comer os discos fritos de trigo temperados com especiarias, água
-                    de rosas, xerez e maçãs.</p>
-                <p class="paragrafo_ingred">
+                    de rosas, xerez e maçãs.
+                </articule>
+                <articule class="art_ingred">
                     Feita basicamente de ovos, farinha, creme de leite e especiarias. Como opção para encrementar, sugerimos
                     mirtilos
                     e/ou frutas vermelhas, com uma deliciosa cobertura de mel das laranjeiras.
-                </p>
-                <p class="paragrafo_preco">R$ 25,00 a porção</p>
+                </articule>
+                <articule class="art_preco">
+                    R$ 25,00 a porção
+                </articule>
             </section>
         </div>
     </main>
