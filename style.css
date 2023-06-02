@@ -30,6 +30,8 @@ h2 {
     color: var(--bordo);
     font-size: 2em;
     padding-bottom: 0.5em;
+    text-shadow: 4px 4px 6px #3131313e;
+
 }
 
 header > p {
@@ -58,7 +60,10 @@ header > p {
 
 main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin: 0px 20px;
 }
 
 .btn_navs {
@@ -77,13 +82,14 @@ main {
     color: #75191bb1;
 }
 
-.nav_e_paragrafos {
-    width: 750px;
+.navs_e_paragrafos {
+    width: 700px;
+    box-shadow: 4px 4px 6px #3131313e;
 }
 
 .navs {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 1em;
 }
 
@@ -91,5 +97,24 @@ img {
     width: 200px;
     height: 250px;
     border-radius: 2px;
-    margin-left: 2em;
+    box-shadow: 4px 4px 6px #3131313e;
+    border-radius: 5px;
 }
+
+/* usando o responsivo - celular e tablets */
+@media screen and (max-width: 920px) and (min-width: 200px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    .navs_e_paragrafos {
+        margin: auto;
+        width: auto;
+        margin: 20px;
+    }
+}
+
