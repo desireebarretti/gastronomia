@@ -10,21 +10,27 @@ navs.addEventListener('click', function(e){
     let btnPreco = document.querySelector('#preco')
 
     if(e.target.dataset.id === 'historia'){
+        // deixando os displays ok
         artHist.style.display = 'block'
         artIngr.style.display = 'none'
         artPreco.style.display = 'none'
-        btnHist.style.color = '#75191bb1'
 
+        btnHist.style.color = '#f7ddddd8'
+        
     } else if(e.target.dataset.id === 'ingredientes'){
+        // deixando os displays ok
         artIngr.style.display = 'block'
         artHist.style.display = 'none'
         artPreco.style.display = 'none'
-        btnIngred.style.color = '#75191bb1'
+
+        btnIngred.style.color = '#f7ddddd8'
 
     } else {
+        // deixando os displays ok
         artPreco.style.display = 'block'
         artIngr.style.display = 'none'
         artHist.style.display = 'none'
-        btnPreco.style.color = '#75191bb1'
+        
+        btnPreco.style.color = '#f7ddddd8'
     }
 })
